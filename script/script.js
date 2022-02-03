@@ -1,3 +1,5 @@
+//Variables
+
 const start = document.getElementById("start-bttn");
 const resetGame = document.getElementById("reset-bttn");
 const player = document.getElementById("player");
@@ -14,16 +16,22 @@ const boxArr = [
   "box-c3",
 ];
 const boxId = [];
+
+//Loop to get box IDs, stored in boxId
 boxArr.forEach(function (box) {
   boxId.push(document.getElementById(box));
 });
 
+//Start and Reset button event
 start.addEventListener("click", function () {
   player.style.visibility = "visible";
   player.innerHTML = "Player One";
   start.style.border = "2px solid black";
 });
 
+//Grid click events
+
+//EventHandler function
 function clickBox(event) {
   if (player.innerHTML === "Player One") {
     event.target.innerHTML = "O";
@@ -35,16 +43,7 @@ function clickBox(event) {
   }
 }
 
+//EventListener
 for (let i = 0; i < boxId.length; i++) {
   boxId[i].addEventListener("click", clickBox);
 }
-
-/*boxId[0].addEventListener("click", clickBox);
-boxId[1].addEventListener("click", clickBox);
-boxId[2].addEventListener("click", clickBox);
-boxId[3].addEventListener("click", clickBox);
-boxId[4].addEventListener("click", clickBox);
-boxId[5].addEventListener("click", clickBox);
-boxId[6].addEventListener("click", clickBox);
-boxId[7].addEventListener("click", clickBox);
-boxId[8].addEventListener("click", clickBox);*/
