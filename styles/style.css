@@ -1,3 +1,4 @@
+/* GameBoard Styles */
 .game-board {
   width: 600px;
   height: 600px;
@@ -23,10 +24,7 @@
   align-items: center;
 }
 
-h1 {
-  text-align: center;
-}
-
+/*Button styles*/
 button {
   position: relative;
   width: 200px;
@@ -41,6 +39,11 @@ button {
      border: 2px solid black;
  }
 
+ /* Player element styles */
+ h1 {
+    text-align: center;
+  }
+ 
  #player {
      visibility: hidden;
  }
