@@ -1,5 +1,4 @@
 //Variables
-
 const start = document.getElementById("start-bttn");
 const resetGame = document.getElementById("reset-bttn");
 const player = document.getElementById("player");
