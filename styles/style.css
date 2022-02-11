@@ -1,7 +1,8 @@
 /* GameBoard Styles */
 .game-board {
-  width: 600px;
-  height: 600px;
+  max-width: 970px;
+  width: 80%;
+  height: 700px;
   margin: 0 auto;
   background-color: #34495e;
   color: #fff;
@@ -18,21 +19,27 @@
   border-radius: 2px;
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /*Button styles*/
+.bttn-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
 button {
   position: relative;
   width: 200px;
-  margin: 20px auto;
+  margin: 20px;
   display: flex;
-  font-size: 21px;
+  font-size: 1rem;
+  display: inline-block;
   border: 1px solid black;
-  padding: 8px;
+  padding: 1rem;
   justify-content: center;
 }
 button:hover {
@@ -44,6 +51,8 @@ h1 {
   text-align: center;
   text-transform: capitalize;
   font-family: "Source Code Pro", monospace;
+  font-size: 4rem;
+  margin: 0;
 }
 
 #player {
